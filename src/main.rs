@@ -4,7 +4,7 @@ use crate::figlet::FIGfont;
 
 fn main() {
     let sf = FIGfont::standard().unwrap();
-    let io = sf.convert("Hello World");
+    let io = sf.convert("Test");
     println!("{}", io.unwrap());
 }
 
