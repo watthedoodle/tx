@@ -1,6 +1,11 @@
+mod figlet;
+
+use crate::figlet::FIGfont;
+
 fn main() {
-    let genned = self::link_in_bio("wat the doodle!");
-    println!("{}", genned);
+    let sf = FIGfont::standard().unwrap();
+    let io = sf.convert("Hello World");
+    println!("{}", io.unwrap());
 }
 
 fn link_in_bio(s: &str) -> String {
